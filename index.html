@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지피터스가 사례게시글 작성 GPT를 만든 꿀팁 (by 개발자F)</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="pagination">
+            <button class="page-btn active" data-page="1">1</button>
+            <button class="page-btn" data-page="2">2</button>
+            <button class="page-btn" data-page="3">3</button>
+            <button class="page-btn" data-page="4">4</button>
+            <button class="page-btn" data-page="5">5</button>
+        </div>
+
+        <div class="content">
+            <div class="page active" id="page1">
+                <div class="page-inner">
+                    <h1>지피터스가 사례게시글 작성 GPT를 만든 꿀팁</h1>
+                    <h2>by 개발자F</h2>
+                    <div class="intro-text">
+                        <p>"인공지능으로 쉽고 빠르게 '경험'을 공유하는 시대입니다! 지피터스와 개발자F가 직접 만든 '사례 게시글 작성 GPT'의 제작 노하우와 실제 경험담을 지금 공개합니다!"</p>
+                    </div>
+                    <div class="nav-arrow">
+                        <button class="next-btn">다음 페이지 →</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page" id="page2">
+                <div class="page-inner">
+                    <h1>GPT 기능 빠르게 알아보기</h1>
+                    <div class="content-text">
+                        <p>GPT를 나만의 비서로 만들기 위한 네 가지 필수 요소를 소개합니다.</p>
+                        <div class="feature-box">
+                            <div class="feature">
+                                <h3>지침</h3>
+                                <p>GPT가 따라야 할 행동 규칙과 기준을 명확히 정리해요.</p>
+                            </div>
+                            <div class="feature">
+                                <h3>지식</h3>
+                                <p>GPT가 사용할 수 있는 전문적이고 신뢰할 수 있는 정보를 제공해요.</p>
+                            </div>
+                            <div class="feature">
+                                <h3>기능</h3>
+                                <p>GPT가 실제로 수행 가능한 구체적인 작업을 정의해요.</p>
+                            </div>
+                            <div class="feature">
+                                <h3>작업</h3>
+                                <p>GPT에게 맡길 정확하고 명확한 임무를 설정해요.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-buttons">
+                        <button class="prev-btn">← 이전 페이지</button>
+                        <button class="next-btn">다음 페이지 →</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page" id="page3">
+                <div class="page-inner">
+                    <h1>사례 게시글 작성 GPT, 이렇게 만들었어요!</h1>
+                    <h2>개발자F의 실제 경험</h2>
+                    <div class="content-text">
+                        <p>저는 사례 공유를 더 쉽고 효과적으로 돕기 위한 GPT를 직접 만들어봤어요. 제가 실제로 거쳤던 과정이에요.</p>
+                        <div class="experience">
+                            <h3>요구사항 정의</h3>
+                            <p>사례 게시글 작성이 어렵다는 문제를 해결하고, AI 및 자동화 툴 사용 경험을 손쉽게 공유할 수 있도록 요구사항을 정리했어요.</p>
+                        </div>
+                        <div class="experience">
+                            <h3>기능 정의</h3>
+                            <p>스타일 선택, 콘텐츠 준비, 초안 작성, 최종 편집까지 지원하도록 기능을 명확히 했어요.</p>
+                        </div>
+                        <div class="experience">
+                            <h3>제약사항 정의</h3>
+                            <p>결과물이 지피터스 사례 게시글 마크다운 구조를 따르도록 하고, 콘텐츠의 범위를 명확히 제한했어요.</p>
+                        </div>
+                    </div>
+                    <div class="nav-buttons">
+                        <button class="prev-btn">← 이전 페이지</button>
+                        <button class="next-btn">다음 페이지 →</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page" id="page4">
+                <div class="page-inner">
+                    <h1>레퍼런스 및 프롬프트 설계</h1>
+                    <div class="content-text">
+                        <div class="reference">
+                            <h3>레퍼런스 활용</h3>
+                            <p>공식 OpenAI GPT 빌더 프롬프트 문서를 적극 활용했어요.</p>
+                            <a href="https://platform.openai.com/docs/guides/prompt-engineering" target="_blank" class="link-btn">OpenAI GPT 빌더 바로가기</a>
+                        </div>
+                        <div class="prompt-design">
+                            <h3>프롬프트를 구조적으로 설계해 효율성을 높였어요.</h3>
+                            <ul>
+                                <li>역할(Role) 설정</li>
+                                <li>Few shot 기법</li>
+                                <li>CoT(Chain of Thought) 방식</li>
+                                <li>Tool call 기능</li>
+                                <li>XML 구조 활용</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-buttons">
+                        <button class="prev-btn">← 이전 페이지</button>
+                        <button class="next-btn">다음 페이지 →</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page" id="page5">
+                <div class="page-inner">
+                    <h1>한눈에 보는 총 정리!</h1>
+                    <div class="content-text">
+                        <div class="summary">
+                            <div class="summary-item">
+                                <h3>목적</h3>
+                                <p>AI 및 자동화 경험을 쉽게 공유하는 사례 게시글 작성 GPT</p>
+                            </div>
+                            <div class="summary-item">
+                                <h3>필수 요소</h3>
+                                <p>지침, 지식, 기능, 작업</p>
+                            </div>
+                            <div class="summary-item">
+                                <h3>GPT 구축 핵심 과정</h3>
+                                <p>요구사항 정의 → 기능 정의 → 제약사항 정의</p>
+                                <p>OpenAI 공식 문서 활용</p>
+                            </div>
+                            <div class="summary-item">
+                                <h3>프롬프트 설계 핵심</h3>
+                                <p>역할, Few shot, CoT, Tool call, XML 구조</p>
+                            </div>
+                            <div class="summary-item">
+                                <h3>최종 결과물 형식</h3>
+                                <p>제목 → 소개 → 진행 방법 → 결과와 배운 점 → 도움 받은 글(선택)</p>
+                            </div>
+                        </div>
+                        <div class="closing">
+                            <p>"지금 바로 지피터스 X 개발자F와 함께 여러분만의 GPT를 만들어 사례 공유를 혁신해 보세요!"</p>
+                        </div>
+                    </div>
+                    <div class="nav-buttons">
+                        <button class="prev-btn">← 이전 페이지</button>
+                        <button class="home-btn">처음으로</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
